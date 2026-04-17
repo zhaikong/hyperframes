@@ -14,7 +14,7 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },

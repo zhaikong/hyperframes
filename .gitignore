@@ -6,8 +6,6 @@ dist/
 *.tsbuildinfo
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # OS
@@ -15,7 +13,6 @@ dist/
 Thumbs.db
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -72,3 +69,4 @@ captures/
 *-ad/
 *-tour/
 *-brand/
+config.bat

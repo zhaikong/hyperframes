@@ -6,8 +6,6 @@ dist/
 *.tsbuildinfo
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # OS
@@ -72,3 +70,4 @@ captures/
 *-ad/
 *-tour/
 *-brand/
+config.bat

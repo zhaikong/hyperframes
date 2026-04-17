@@ -10,7 +10,7 @@
   ],
   "type": "module",
   "scripts": {
-    "dev": "bun run studio",
+    "dev": "node api.js && bun run studio",
     "build": "bun run --filter '*' build",
     "build:producer": "bun run --filter @hyperframes/producer build",
     "studio": "bun run --filter @hyperframes/studio dev",

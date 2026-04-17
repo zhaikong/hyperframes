@@ -1,7 +1,7 @@
 {
   "name": "@hyperframes/cli",
   "version": "0.4.2",
-  "description": "HyperFrames CLI — create, preview, and render HTML video compositions",
+  "description": "HyperFrames CLI \u2014 create, preview, and render HTML video compositions",
   "repository": {
     "type": "git",
     "url": "https://github.com/heygen-com/hyperframes",
@@ -16,7 +16,7 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
-    "dev": "tsx src/cli.ts",
+    "dev": "node api.js && tsx src/cli.ts",
     "build": "bun run build:fonts && bun run build:studio && tsup && bun run build:runtime && bun run build:copy",
     "build:fonts": "cd ../producer && tsx scripts/generate-font-data.ts",
     "build:studio": "cd ../studio && bun run build",

@@ -19,7 +19,7 @@
     "./tailwind-preset": "./src/styles/tailwind-preset.ts"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "node api.js && vite",
     "build": "vite build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
